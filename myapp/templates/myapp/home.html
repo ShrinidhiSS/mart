@@ -1,0 +1,54 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card">
+                <img alt="Card image top" class="card-img-top" src="{% static 'myapp/img/man.jpg' %}">
+                <div class="card-body">
+                    <a class="card-title" href="{% url 'men' %}">Men</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <img alt="Card image top" class="card-img-top" src="{% static 'myapp/img/woman.jpg' %}">
+                <div class="card-body">
+                    <a class="card-title" href="{% url 'women' %}">Women</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <img alt="Card image top" class="card-img-top" src="{% static 'myapp/img/girl.jpg' %}">
+                <div class="card-body">
+                    <a class="card-title" href="{% url 'girls' %}">Girls</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <!--                <div class="card-header">-->
+                <!--                    Cardigon-->
+                <!--                </div>-->
+                <img alt="Card image top" class="card-img-top" src="{% static 'myapp/img/boy.jpg' %}">
+                <div class="card-body">
+                    <a class="card-title" href="{% url 'boys' %}">Boys</a>
+                    <!--                    <h4 class="card-subtitle">Colors:Grey</h4>-->
+                    <!--                    <p class="card-text">Colors:Grey</p>-->
+                </div>
+                <!--                <div class="card-footer">-->
+                <!--                        Price: $20-->
+                <!--                </div>-->
+            </div>
+        </div>
+
+    </div>
+
+    {% endblock %}
