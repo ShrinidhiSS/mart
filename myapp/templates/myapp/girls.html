@@ -1,0 +1,29 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h2>girls section</h2>
+    <div class="row">
+
+        {% for girl in girls %}
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-header">
+                    {{ girl.product_name }}
+                </div>
+                <img alt="Card image top" class="card-img-top" src="{{ girl.product_image.url }}">
+                <!--                    <div class="card-body">-->
+                <!--                        <p class="card-text">Colors:Grey</p>-->
+                <!--                    </div>-->
+                <div class="card-footer">
+                    ₹{{ girl.product_price }}/-
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}
