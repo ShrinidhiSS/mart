@@ -25,16 +25,5 @@ def girls(request):
 def boys(request):
     boys = Product.objects.filter(category_name__exact='Boys')
     return render(request, 'myapp/boys.html', {'boys': boys})
-    return render(request, 'myapp/men.html')
 
 
-def women(request):
-    return render(request, 'myapp/women.html')
-
-
-def girls(request):
-    return render(request, 'myapp/girls.html')
-
-
-def boys(request):
-    return render(request, 'myapp/boys.html')
