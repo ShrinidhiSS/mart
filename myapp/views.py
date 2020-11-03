@@ -1,17 +1,13 @@
 from django.shortcuts import render
 
-<<<<<<< HEAD
 from myapp.models import Product
 
-=======
->>>>>>> origin/main
 
 def home(request):
     return render(request, 'myapp/home.html')
 
 
 def men(request):
-<<<<<<< HEAD
     men = Product.objects.filter(category_name__exact='Men')
     return render(request, 'myapp/men.html', {'men': men})
 
@@ -29,7 +25,6 @@ def girls(request):
 def boys(request):
     boys = Product.objects.filter(category_name__exact='Boys')
     return render(request, 'myapp/boys.html', {'boys': boys})
-=======
     return render(request, 'myapp/men.html')
 
 
@@ -43,4 +38,3 @@ def girls(request):
 
 def boys(request):
     return render(request, 'myapp/boys.html')
->>>>>>> origin/main

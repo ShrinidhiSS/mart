@@ -16,8 +16,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Product, ProductAdmin)
-=======
+
 from myapp.models import Products
 
 admin.site.register(Products)
->>>>>>> origin/main
