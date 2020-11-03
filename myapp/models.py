@@ -1,3 +1,4 @@
+
 from PIL import Image
 from django.db import models
 
@@ -29,3 +30,11 @@ class Product(models.Model):
 
 # class Men(models.Model):
 #     pass
+
+from django.db import models
+
+
+class Products(models.Model):
+    product_name = models.CharField(max_length=50)
+    product_price = models.IntegerField()
+    product_image = models.ImageField()
