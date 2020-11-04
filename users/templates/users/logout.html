@@ -1,0 +1,9 @@
+{% extends 'users/base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+<h2>Logged out</h2>
+
+
+Want to sign in again? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+
+{% endblock %}
