@@ -28,13 +28,4 @@ class Product(models.Model):
             img.thumbnail(output_size)
             img.save(self.product_image.path)
 
-# class Men(models.Model):
-#     pass
 
-from django.db import models
-
-
-class Products(models.Model):
-    product_name = models.CharField(max_length=50)
-    product_price = models.IntegerField()
-    product_image = models.ImageField()
