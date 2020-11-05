@@ -19,6 +19,9 @@
                 <div class="card-footer">
                     ₹{{ man.product_price }}/-
                 </div>
+                <button class="btn mt-2" type="submit">
+                    <a class="btn btn-primary" href="{% url 'detail' man.id %}">View Product</a>
+                </button>
             </div>
         </div>
         {% endfor %}

@@ -15,6 +15,7 @@ class Product(models.Model):
     product_price = models.IntegerField(default=100)
     product_image = models.ImageField(default='default.jpg', upload_to='product_pics')
     category_name = models.CharField(max_length=50, choices=type, default='Unknown')
+    qty = models.IntegerField(default=0)
 
     def __str__(self):
         return self.product_name
@@ -27,5 +28,4 @@ class Product(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.product_image.path)
-
 

@@ -10,6 +10,9 @@ urlpatterns = [
     path('men/', views.men, name='men'),
     path('girls/', views.girls, name='girls'),
     path('boys/', views.boys, name='boys'),
+    path('detail/<id>/', views.detail, name='detail'),
+    path('cart/', views.cart, name='cart'),
+
 ]
 
 if settings.DEBUG:
